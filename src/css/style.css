@@ -1,0 +1,53 @@
+.contenedor{
+    border: 5px dotted red;
+    height: 500px;
+}
+
+.posiciones{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.static{
+    background-color: red;  /*esto no sirve para nada*/
+    color: white;
+}
+
+.absolute{
+    background-color: brown; 
+    color: yellow;          /*se mueve con todo el navegador*/
+  
+
+    
+}
+
+.relative{
+    color: blue;
+    background-color: aqua;  /* para moldearlo a nuestro gusto pienso q es el mejor*/
+    position: relative;
+    top: 20px;
+    left: 50px;              /*se utiliza dentro del contenedor */
+    /* bottom: 40%;
+    left: 80%; */
+}
+
+.fidex{
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    left: 50px; /*toma la referencia de la pantalla pero se ancla a la posicion q yo le ponga y se mueve al hace scroll*/
+ /*esto ayuda mucho y sirve para las barras de navegacion*/
+}
+
+h1{
+    text-align: center;
+}
+
+.sticky{
+    background-color: violet;
+    position: sticky;               /*este se mueve hasta donde lo pongamos*/
+    top: 0;
+}
